@@ -47,23 +47,12 @@ master.menu.administrator.investor-record.list = Investor Records
 master.menu.administrator.announcement.create = Create announcement
 master.menu.administrator.investor-record.create = Create investor record
 
-# master.menu.provider ########################################################
-
-master.menu.provider = Provider
-master.menu.provider.favourite-link = Favourite link
-master.menu.provider.createRequest = Create Request
-
 # master.menu.employer ########################################################
 
 master.menu.employer = Employer
 master.menu.employer.listJobs = Jobs
 master.menu.employer.listapplications = Application list
 master.menu.employer.createJob = Create Job
-
-# master.menu.consumer ##########################################################
-
-master.menu.consumer = Consumer
-master.menu.consumer.create.offer= Create offer
 
 # master.menu.worker ##########################################################
 
@@ -76,10 +65,6 @@ master.menu.worker.job.list = Jobs
 master.menu.features = Authenticated
 master.menu.user-account = Account
 master.menu.user-account.general-data = General data
-master.menu.user-account.provider = Provider data
-master.menu.user-account.become-provider = Become a provider
-master.menu.user-account.consumer = Consumer data
-master.menu.user-account.become-consumer = Become a consumer
 master.menu.user-account.employer = Employer data
 master.menu.user-account.become-employer = Become an employer
 master.menu.user-account.worker = Worker data
