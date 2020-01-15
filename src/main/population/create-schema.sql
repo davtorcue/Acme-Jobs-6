@@ -38,17 +38,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `audit_record` (
-       `id` integer not null,
-        `version` integer not null,
-        `body` varchar(255),
-        `moment` datetime(6),
-        `status` integer,
-        `title` varchar(255),
-        `auditor_id` integer not null,
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `auditor` (
        `id` integer not null,
         `version` integer not null,
@@ -150,31 +139,6 @@
         `fecha` datetime(6),
         `nota` varchar(255),
         primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `message` (
-       `id` integer not null,
-        `version` integer not null,
-        `body` varchar(255),
-        `moment` datetime(6),
-        `tags` varchar(255),
-        `title` varchar(255),
-        `message_thread_id` integer not null,
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `message_thread` (
-       `id` integer not null,
-        `version` integer not null,
-        `moment` datetime(6),
-        `title` varchar(255),
-        `users` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `message_thread_user_account` (
-       `message_thread_id` integer not null,
-        `useraccount_id` integer not null
     ) engine=InnoDB;
 
     create table `parameter` (
@@ -286,11 +250,6 @@ create index IDXrr7tnj8h1bfv46pnsq6lwvxqd on `job` (`deadline`, `final_mode`);
        foreign key (`worker_id`) 
        references `worker` (`id`);
 
-    alter table `audit_record` 
-       add constraint `FKdcrrgv6rkfw2ruvdja56un4ji` 
-       foreign key (`auditor_id`) 
-       references `auditor` (`id`);
-
     alter table `auditor` 
        add constraint FK_clqcq9lyspxdxcp6o4f3vkelj 
        foreign key (`user_account_id`) 
@@ -315,21 +274,6 @@ create index IDXrr7tnj8h1bfv46pnsq6lwvxqd on `job` (`deadline`, `final_mode`);
        add constraint `FK3rxjf8uh6fh2u990pe8i2at0e` 
        foreign key (`employer_id`) 
        references `employer` (`id`);
-
-    alter table `message` 
-       add constraint `FKn5adlx3oqjna7aupm8gwg3fuj` 
-       foreign key (`message_thread_id`) 
-       references `message_thread` (`id`);
-
-    alter table `message_thread_user_account` 
-       add constraint `FKcsl6erkfjmaaiqw9niql8tday` 
-       foreign key (`useraccount_id`) 
-       references `user_account` (`id`);
-
-    alter table `message_thread_user_account` 
-       add constraint `FKtchis3o5qij98x87mty6hdk4d` 
-       foreign key (`message_thread_id`) 
-       references `message_thread` (`id`);
 
     alter table `worker` 
        add constraint FK_l5q1f33vs2drypmbdhpdgwfv3 

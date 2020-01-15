@@ -29,7 +29,9 @@
         	<acme:menu-suboption code="master.menu.anonymous.favourite-link-davtorcue" action="http://www.twitter.com/"/>
         	<acme:menu-suboption code="master.menu.anonymous.favourite-link-enrpravaz" action="https://po.ta.to/"/>
         	<acme:menu-suboption code="master.menu.anonymous.favourite-link-jospearui" action="http://www.youtube.com/"/>
-        	<acme:menu-separator/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.anonymous2" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.shoutlist" action="/anonymous/shout/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.create" action="/anonymous/shout/create"/>
 			<acme:menu-suboption code="master.menu.anonymous.PradaBulletin" action="/anonymous/pradabulletin/list"/>
@@ -71,9 +73,6 @@
 			<acme:menu-suboption code="master.menu.worker.job.list" action="/worker/job/list"/>
     </acme:menu-option>
     
-		<acme:menu-option code="master.menu.auditor" access="hasRole('Auditor')">
-			<acme:menu-suboption code="master.menu.auditor.job.list" action="/auditor/job/list"/>
-		</acme:menu-option>
 	</acme:menu-left>
 
 
@@ -84,7 +83,6 @@
 	<acme:menu-suboption code="master.menu.challenge.list" action="/authenticated/challenge/list" />
 	<acme:menu-suboption code="master.menu.investor-record.investor-record-list" action="/authenticated/investor-record/list"/>
 	<acme:menu-suboption code="master.menu.authenticated.company-records.list" action="/authenticated/company-record/list"/>
-	<acme:menu-suboption code="master.menu.authenticated.message-thread.list" action="/authenticated/message-thread/list_mine"/>
 	<acme:menu-suboption code="master.menu.job.list" action="/authenticated/job/list-mine"/>
 	
 	</acme:menu-option>

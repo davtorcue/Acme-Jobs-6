@@ -13,5 +13,5 @@
 	<acme:form-textbox code="anonymous.company-records.form.label.stars" path="stars" />
 	<acme:form-checkbox code="anonymous.company-records.form.label.incorporated" path="incorporated" />
 	
-	<acme:form-return code="anonymous.company-records.button.return"/>
+	<acme:form-return code="anonymous.company-records.form.button.return"/>
 </acme:form>

@@ -100,7 +100,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 				Double sum = this.repository.sumDutiesPercentageByJobId(jobId);
 				errors.state(request, sum == 100, "reference", "employer.job.form.error.dutiesNotSum100");
 			} else {
-				errors.state(request, duties != null, "reference", "employer.job.form.error.dutiesIsNull");
+				errors.state(request, !duties.isEmpty(), "reference", "employer.job.form.error.dutiesIsNull");
 			}
 
 		}
