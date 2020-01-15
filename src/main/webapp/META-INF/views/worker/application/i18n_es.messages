@@ -1,6 +1,6 @@
-authenticated.worker.application.form.label.job = Trabajo
-authenticated.worker.application.form.label.creation-moment = Momento de creación
-authenticated.worker.application.form.label.status = Estado
+worker.application.form.label.job = Trabajo
+worker.application.form.label.creation-moment = Momento de creación
+worker.application.form.label.status = Estado
 
 worker.application.form.label.jobs = Trabajo al que se ha aplicado
 worker.application.form.label.reference-number = Número de referencia
@@ -11,3 +11,4 @@ worker.application.form.label.skills = Habilidades
 worker.application.form.label.qualifications = Cualificaciones
 
 worker.application.form.button.create = Crear
+worker.application.form.button.return = Volver

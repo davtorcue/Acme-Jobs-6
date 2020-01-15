@@ -19,12 +19,12 @@
 	
 	<jstl:if test="${command != 'create'}">
 		<acme:form-textarea code="worker.application.form.label.status" path="status" readonly="true"/>
-		<acme:form-moment code="worker.application.form.label.creationMoment" path="creationMoment" readonly="true"/>
+		<acme:form-moment code="worker.application.form.label.creation-moment" path="creationMoment" readonly="true"/>
 	</jstl:if>
 	<acme:form-textbox code="worker.application.form.label.reference-number" path="referenceNumber" placeholder="EEEE-JJJJ:WWWW"/>
 	<acme:form-textarea code="worker.application.form.label.statement" path="statement"/>
-	<acme:form-textarea code="worker.application.form.label.skills" path="skills" readonly="true"/>
-	<acme:form-textarea code="worker.application.form.label.qualifications" path="qualifications" readonly="true"/>
+	<acme:form-textarea code="worker.application.form.label.skills" path="skills"/>
+	<acme:form-textbox code="worker.application.form.label.qualifications" path="qualifications"/>
 	<acme:form-hidden path="jobId"/>
 	
 	<acme:form-submit test= "${command== 'show' }"
@@ -33,5 +33,5 @@
 	<acme:form-submit test= "${command== 'create' }"
 		code="worker.application.form.button.create" action="/worker/application/create"/>
 	
-	<acme:form-return code="authenticated.challenge.form.button.return"/>
+	<acme:form-return code="worker.application.form.button.return"/>
 </acme:form>

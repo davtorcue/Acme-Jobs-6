@@ -33,25 +33,6 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.investor-record.investor-record-list = Declaraciones de inversión
 master.menu.anonymous.company-records.list = Registros de empresa
-master.menu.anonymous.favourite-link-alorodlla = Enlace favorito-alorodlla
-master.menu.anonymous.favourite-link-antmarcab4 = Enlace favorito - antmarcab4
-master.menu.anonymous.favourite-link-davtorcue = Enlace favorito-davtorcue
-master.menu.anonymous.favourite-link = Enlace favorito-enrpravaz
-master.menu.anonymous.favourite-link-jospearui = Enlace favorito-jospearui
-master.menu.anonymous.shoutlist = Lista de gritos
-master.menu.anonymous.create = Gritar
-master.menu.anonymous.PradaBulletin = Lista Boletines Prada
-master.menu.anonymous.createPradaBulletin = Crear Boletin Prada
-master.menu.anonymous.martinez-bulletinlist = Lista Boletines Martínez
-master.menu.anonymous.createmartinez-bulletin = Crear Boletin Martínez
-master.menu.anonymous.rodriguez-bulletin.list = Lista Boletines Rodriguez
-master.menu.anonymous.rodriguez-bulletin.create = Crear Boletin Rodriguez
-master.menu.anonymous.penuelaBulletinlist = Lista Boletines Penuela
-master.menu.anonymous.penuelaBulletincreate = Crear Boletin Penuela
-master.menu.anonymous.toroBulletinlist = Lista Boletines Toro
-master.menu.anonymous.toroBulletincreate = Crear Boletin Toro
-
-
 
 # master.menu.administrator ###################################################
 
@@ -66,12 +47,24 @@ master.menu.administrator.investor-record.list = Lista de Declaraciones de inver
 master.menu.administrator.announcement.create = Crear un Anuncio
 master.menu.administrator.investor-record.create = Crear una Declaración de inversion
 
+# master.menu.provider ########################################################
+
+master.menu.provider = Proveedor
+master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.createRequest = Crear Request
+
 # master.menu.employer ########################################################
 
 master.menu.employer = Empleado
 master.menu.employer.listJobs = Trabajos
 master.menu.employer.listapplications = Listado de aplicaciones
 
+
+# master.menu.consumer ##########################################################
+
+master.menu.consumer = Consumidor
+master.menu.consumer.create.offer= Crear oferta
+master.menu.employer.createJob = Crear trabajo
 
 # master.menu.worker ##########################################################
 
@@ -90,12 +83,19 @@ master.menu.challenge.create = Crear Desafíos
 master.menu.features = Autenticado
 master.menu.user-account = Cuenta
 master.menu.user-account.general-data = Datos generales
+master.menu.user-account.provider = Datos de proveedor
+master.menu.user-account.become-provider = Hazte proveedor
+master.menu.user-account.consumer = Datos de consumidor
+master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.user-account.employer = Datos de empleador
 master.menu.user-account.become-employer = Hazte empleador
 master.menu.user-account.worker = Datos de trabajador
 master.menu.user-account.become-worker = Hazte trabajador
+master.menu.user-account.listRequest = Peticiones
+master.menu.user-account.offerlist = Ofertas
 master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.investor-record.investor-record-list = Declaraciones de inversión
+master.menu.user-account.offerlist = Lista de Ofertas
 master.menu.administrator.announcement.create = Crear anuncio
 master.menu.authenticated.company-records.list = Registros de empresa
 master.menu.authenticated.message-thread.list = Lista de mis hilos
@@ -115,7 +115,7 @@ master.footer.label.license = Licencia
 master.footer.title.social = Social
 master.footer.label.linked-in = Linked-In
 master.footer.label.twitter = Twitter
-master.footer.title.languages = Lenguages
+master.footer.title.languages = Lenguajes
 master.footer.label.english = Inglés
 master.footer.label.spanish = Español
 
