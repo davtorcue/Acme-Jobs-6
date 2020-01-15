@@ -3,6 +3,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="administrator.company-records.list.label.name" path="name" width="70%" />
-	<acme:list-column code="administrator.company-records.list.label.sector" path="sector" width="30%" />
+	<acme:list-column code="administrator.company-records.list.label.name" path="name" width="50%" />
+	<acme:list-column code="administrator.company-records.list.label.sector" path="sector" width="25%" />
+	<acme:list-column code="administrator.company-records.list.label.starts" path="stars" width="25%"/>
 </acme:list>
