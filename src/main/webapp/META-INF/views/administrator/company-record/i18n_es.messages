@@ -1,7 +1,7 @@
 administrator.company-records.list.label.name = Nombre
 administrator.company-records.list.label.sector = Sector
 administrator.company-records.list.label.ceoname = Nombre del ceo
-administrator.company-records.list.label.description = Descriptión
+administrator.company-records.list.label.description = Descripción
 administrator.company-records.list.label.web = Página web
 administrator.company-records.list.label.phone = Teléfono
 administrator.company-records.list.label.email = Email

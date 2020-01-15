@@ -33,5 +33,5 @@
 	<acme:form-submit test= "${command== 'create' }"
 		code="worker.application.form.button.create" action="/worker/application/create"/>
 	
-	<acme:form-return code="authenticated.challenge.form.button.return"/>
+	<acme:form-return code="worker.application.form.button.return"/>
 </acme:form>

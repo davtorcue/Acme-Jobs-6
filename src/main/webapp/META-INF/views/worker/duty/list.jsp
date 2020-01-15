@@ -3,7 +3,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-    <acme:list-column code="authenticated.duty.list.label.title" path="title" width="50%" />
-    <acme:list-column code="authenticated.duty.list.label.percentage" path="percentage" width="50%" />
+    <acme:list-column code="worker.duty.list.label.title" path="title" width="50%" />
+    <acme:list-column code="worker.duty.list.label.percentage" path="percentage" width="50%" />
     
 </acme:list>
