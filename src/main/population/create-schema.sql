@@ -98,27 +98,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `consumer` (
-       `id` integer not null,
-        `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `descriptor` (
-       `id` integer not null,
-        `version` integer not null,
-        `description` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `descriptor_duty` (
-       `descriptor_id` integer not null,
-        `duties_id` integer not null
-    ) engine=InnoDB;
-
     create table `duty` (
        `id` integer not null,
         `version` integer not null,
@@ -163,6 +142,16 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `martinez_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `autor` varchar(255),
+        `comentarios` varchar(255),
+        `fecha` datetime(6),
+        `nota` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `message` (
        `id` integer not null,
         `version` integer not null,
@@ -188,21 +177,6 @@
         `useraccount_id` integer not null
     ) engine=InnoDB;
 
-    create table `offer` (
-       `id` integer not null,
-        `version` integer not null,
-        `deadline` datetime(6),
-        `maxmoney_amount` double precision,
-        `maxmoney_currency` varchar(255),
-        `minmoney_amount` double precision,
-        `minmoney_currency` varchar(255),
-        `moment` datetime(6),
-        `text` varchar(255),
-        `ticker` varchar(255),
-        `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `parameter` (
        `id` integer not null,
         `version` integer not null,
@@ -211,25 +185,48 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `provider` (
+    create table `penuela_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
+        `cons` varchar(255),
+        `name` varchar(255),
+        `pros` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `request` (
+    create table `prada_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `deadline` datetime(6),
-        `moment` datetime(6),
-        `reward_amount` double precision,
-        `reward_currency` varchar(255),
+        `author` varchar(255),
+        `company` varchar(255),
         `text` varchar(255),
-        `ticker` varchar(255),
-        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `rodriguez_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `company` varchar(255),
+        `complexity` integer,
+        `project` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `shout` (
+       `id` integer not null,
+        `version` integer not null,
+        `author` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `toro_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `author` varchar(255),
+        `dislikes` varchar(255),
+        `likes` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -260,18 +257,11 @@
 
     insert into `hibernate_sequence` values ( 1 );
 create index IDXnhikaa2dj3la6o2o7e9vo01y0 on `announcement` (`moment`);
-
-    alter table `descriptor_duty` 
-       add constraint UK_kvr5rclgwa51d625rmx13ke96 unique (`duties_id`);
+create index IDXis5k42gjhev7mhqajhcxlw4dv on `duty` (`percentage`);
+create index IDXrr7tnj8h1bfv46pnsq6lwvxqd on `job` (`deadline`, `final_mode`);
 
     alter table `job` 
        add constraint UK_7jmfdvs0b0jx7i33qxgv22h7b unique (`reference`);
-
-    alter table `offer` 
-       add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
-
-    alter table `request` 
-       add constraint UK_9mxq3powq8tqctclj0fbi2nih unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
@@ -311,21 +301,6 @@ create index IDXnhikaa2dj3la6o2o7e9vo01y0 on `announcement` (`moment`);
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 
-    alter table `consumer` 
-       add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
-
-    alter table `descriptor_duty` 
-       add constraint `FK57eqqlhihwvd53ykpmsiqlx2p` 
-       foreign key (`duties_id`) 
-       references `duty` (`id`);
-
-    alter table `descriptor_duty` 
-       add constraint `FKqitedkrksd2w8qyp1fp5eao9f` 
-       foreign key (`descriptor_id`) 
-       references `descriptor` (`id`);
-
     alter table `duty` 
        add constraint `FKs2uoxh4i5ya8ptyefae60iao1` 
        foreign key (`job_id`) 
@@ -355,11 +330,6 @@ create index IDXnhikaa2dj3la6o2o7e9vo01y0 on `announcement` (`moment`);
        add constraint `FKtchis3o5qij98x87mty6hdk4d` 
        foreign key (`message_thread_id`) 
        references `message_thread` (`id`);
-
-    alter table `provider` 
-       add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
 
     alter table `worker` 
        add constraint FK_l5q1f33vs2drypmbdhpdgwfv3 
