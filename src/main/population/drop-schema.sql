@@ -15,10 +15,6 @@
        drop 
        foreign key `FKmbjdoxi3o93agxosoate4sxbt`;
 
-    alter table `audit_record` 
-       drop 
-       foreign key `FKdcrrgv6rkfw2ruvdja56un4ji`;
-
     alter table `auditor` 
        drop 
        foreign key FK_clqcq9lyspxdxcp6o4f3vkelj;
@@ -26,18 +22,6 @@
     alter table `authenticated` 
        drop 
        foreign key FK_h52w0f3wjoi68b63wv9vwon57;
-
-    alter table `consumer` 
-       drop 
-       foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
-
-    alter table `descriptor_duty` 
-       drop 
-       foreign key `FK57eqqlhihwvd53ykpmsiqlx2p`;
-
-    alter table `descriptor_duty` 
-       drop 
-       foreign key `FKqitedkrksd2w8qyp1fp5eao9f`;
 
     alter table `duty` 
        drop 
@@ -51,22 +35,6 @@
        drop 
        foreign key `FK3rxjf8uh6fh2u990pe8i2at0e`;
 
-    alter table `message` 
-       drop 
-       foreign key `FKn5adlx3oqjna7aupm8gwg3fuj`;
-
-    alter table `message_thread_user_account` 
-       drop 
-       foreign key `FKcsl6erkfjmaaiqw9niql8tday`;
-
-    alter table `message_thread_user_account` 
-       drop 
-       foreign key `FKtchis3o5qij98x87mty6hdk4d`;
-
-    alter table `provider` 
-       drop 
-       foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
-
     alter table `worker` 
        drop 
        foreign key FK_l5q1f33vs2drypmbdhpdgwfv3;
@@ -79,8 +47,6 @@
 
     drop table if exists `application`;
 
-    drop table if exists `audit_record`;
-
     drop table if exists `auditor`;
 
     drop table if exists `authenticated`;
@@ -88,12 +54,6 @@
     drop table if exists `challenge`;
 
     drop table if exists `company_record`;
-
-    drop table if exists `consumer`;
-
-    drop table if exists `descriptor`;
-
-    drop table if exists `descriptor_duty`;
 
     drop table if exists `duty`;
 
@@ -103,19 +63,19 @@
 
     drop table if exists `job`;
 
-    drop table if exists `message`;
-
-    drop table if exists `message_thread`;
-
-    drop table if exists `message_thread_user_account`;
-
-    drop table if exists `offer`;
+    drop table if exists `martinez_bulletin`;
 
     drop table if exists `parameter`;
 
-    drop table if exists `provider`;
+    drop table if exists `penuela_bulletin`;
 
-    drop table if exists `request`;
+    drop table if exists `prada_bulletin`;
+
+    drop table if exists `rodriguez_bulletin`;
+
+    drop table if exists `shout`;
+
+    drop table if exists `toro_bulletin`;
 
     drop table if exists `user_account`;
 

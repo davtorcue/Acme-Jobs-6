@@ -5,5 +5,5 @@
 <acme:list>
 	<acme:list-column code="anonymous.company-records.list.label.name" path="name" width="50%" />
 	<acme:list-column code="anonymous.company-records.list.label.sector" path="sector" width="25%" />
-	<acme:list-column code="anonymous.company-records.list.label.starts" path="stars" width="25%"/>
+	<acme:list-column code="anonymous.company-records.list.label.stars" path="stars" width="25%"/>
 </acme:list>

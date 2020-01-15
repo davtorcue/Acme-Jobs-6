@@ -29,8 +29,7 @@ public class Application extends DomainEntity {
 	//Atributos------------------------------------------------
 
 	@NotBlank
-	@Length(max = 15)
-	@Length(min = 5)
+	@Length(min = 5, max = 15)
 	private String				referenceNumber;
 
 	@NotNull
