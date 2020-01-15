@@ -33,6 +33,25 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.investor-record.investor-record-list = Declaraciones de inversión
 master.menu.anonymous.company-records.list = Registros de empresa
+master.menu.anonymous.favourite-link-alorodlla = Enlace favorito-alorodlla
+master.menu.anonymous.favourite-link-antmarcab4 = Enlace favorito - antmarcab4
+master.menu.anonymous.favourite-link-davtorcue = Enlace favorito-davtorcue
+master.menu.anonymous.favourite-link = Enlace favorito-enrpravaz
+master.menu.anonymous.favourite-link-jospearui = Enlace favorito-jospearui
+master.menu.anonymous.shoutlist = Lista de gritos
+master.menu.anonymous.create = Gritar
+master.menu.anonymous.PradaBulletin = Lista Boletines Prada
+master.menu.anonymous.createPradaBulletin = Crear Boletin Prada
+master.menu.anonymous.martinez-bulletinlist = Lista Boletines Martínez
+master.menu.anonymous.createmartinez-bulletin = Crear Boletin Martínez
+master.menu.anonymous.rodriguez-bulletin.list = Lista Boletines Rodriguez
+master.menu.anonymous.rodriguez-bulletin.create = Crear Boletin Rodriguez
+master.menu.anonymous.penuelaBulletinlist = Lista Boletines Penuela
+master.menu.anonymous.penuelaBulletincreate = Crear Boletin Penuela
+master.menu.anonymous.toroBulletinlist = Lista Boletines Toro
+master.menu.anonymous.toroBulletincreate = Crear Boletin Toro
+
+
 
 # master.menu.administrator ###################################################
 

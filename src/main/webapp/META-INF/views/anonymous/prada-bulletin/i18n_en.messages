@@ -1,0 +1,9 @@
+anonymous.prada-bulletin.list.label.company = Company
+anonymous.prada-bulletin.list.label.author = Author
+anonymous.prada-bulletin.list.label.text = Text
+
+anonymous.prada-bulletin.form.label.company = Company
+anonymous.prada-bulletin.form.label.author = Author
+anonymous.prada-bulletin.form.label.text = Text
+anonymous.prada-bulletin.form.button.create = Send
+anonymous.prada-bulletin.form.button.return = Return

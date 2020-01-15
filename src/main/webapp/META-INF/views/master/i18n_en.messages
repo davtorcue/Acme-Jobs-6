@@ -33,6 +33,23 @@ master.menu.anonymous.favourite-link = Favourite link
 master.menu.investor-record.investor-record-list = Investor Records
 master.menu.announcement.announcement-list = Announcement List
 master.menu.anonymous.company-records.list = Company Records
+master.menu.anonymous.favourite-link-alorodlla = Favourite link-alorodlla
+master.menu.anonymous.favourite-link-antmarcab4 = Favourite link - antmarcab4
+master.menu.anonymous.favourite-link-davtorcue = Favourite link-davtorcue
+master.menu.anonymous.favourite-link-enrpravaz = Favourite link-enrpravaz
+master.menu.anonymous.favourite-link-jospearui = Favourite link-jospearui
+master.menu.anonymous.shoutlist = Shout list
+master.menu.anonymous.create = Shout
+master.menu.anonymous.PradaBulletin = Prada-Bulletin list
+master.menu.anonymous.createPradaBulletin = Create Prada Bulletin
+master.menu.anonymous.toroBulletincreate = Create Toro Bulletin
+master.menu.anonymous.toroBulletinlist= Toro-Bulletin list
+master.menu.anonymous.martinez-bulletinlist = Martínez-Bulletin list
+master.menu.anonymous.createmartinez-bulletin = Create Martinez Bulletin
+master.menu.anonymous.rodriguez-bulletin.list = Rodriguez-Bulletin list
+master.menu.anonymous.rodriguez-bulletin.create = Create Rodriguez Bulletin
+master.menu.anonymous.penuelaBulletinlist = Penuela-Bulletin list
+master.menu.anonymous.penuelaBulletincreate = Create Penuela Bulletin
 
 # master.menu.administrator ###################################################
 
