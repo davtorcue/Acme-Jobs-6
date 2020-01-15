@@ -19,7 +19,7 @@
 	
 	<jstl:if test="${command != 'create'}">
 		<acme:form-textarea code="worker.application.form.label.status" path="status" readonly="true"/>
-		<acme:form-moment code="worker.application.form.label.creationMoment" path="creationMoment" readonly="true"/>
+		<acme:form-moment code="worker.application.form.label.creation-moment" path="creationMoment" readonly="true"/>
 	</jstl:if>
 	<acme:form-textbox code="worker.application.form.label.reference-number" path="referenceNumber" placeholder="EEEE-JJJJ:WWWW"/>
 	<acme:form-textarea code="worker.application.form.label.statement" path="statement"/>
