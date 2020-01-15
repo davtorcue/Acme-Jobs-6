@@ -1,4 +1,4 @@
-administrator.parameter.form.label.spamthreshold = Spamthreshold:
-administrator.parameter.form.label.spamwords = Palabras spam:
+administrator.parameter.form.label.spamthreshold = Límite de spam
+administrator.parameter.form.label.spamwords = Palabras spam
 administrator.parameter.form.button.return = Volver
 administrator.parameter.form.button.update = Actualizar
