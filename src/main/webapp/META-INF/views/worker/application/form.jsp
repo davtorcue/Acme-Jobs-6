@@ -23,8 +23,8 @@
 	</jstl:if>
 	<acme:form-textbox code="worker.application.form.label.reference-number" path="referenceNumber" placeholder="EEEE-JJJJ:WWWW"/>
 	<acme:form-textarea code="worker.application.form.label.statement" path="statement"/>
-	<acme:form-textarea code="worker.application.form.label.skills" path="skills"/>
-	<acme:form-textbox code="worker.application.form.label.qualifications" path="qualifications"/>
+	<acme:form-textarea code="worker.application.form.label.skills" path="skills" readonly="true"/>
+	<acme:form-textarea code="worker.application.form.label.qualifications" path="qualifications" readonly="true"/>
 	<acme:form-hidden path="jobId"/>
 	
 	<acme:form-submit test= "${command== 'show' }"
