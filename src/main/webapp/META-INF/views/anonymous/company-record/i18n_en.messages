@@ -1,11 +1,15 @@
-anonymous.company-records.list.label.name = Name
-anonymous.company-records.list.label.sector= Sector
-anonymous.company-records.list.label.description = Description
-anonymous.company-records.list.label.web = Website
-anonymous.company-records.list.label.email = Email
-anonymous.company-records.list.label.stars = Stars
-anonymous.company-records.list.label.ceoname = CEO's name
-anonymous.company-records.list.label.phone = Phone
-anonymous.company-records.list.label.incorporated = Incorporated
+anonymous.company-records.form.label.name = Name
+anonymous.company-records.form.label.sector = Sector
+anonymous.company-records.form.label.ceoname = CEO's name
+anonymous.company-records.form.label.description = Description
+anonymous.company-records.form.label.web = Website
+anonymous.company-records.form.label.phone = Phone
+anonymous.company-records.form.label.email = Email
+anonymous.company-records.form.label.stars = Stars
+anonymous.company-records.form.label.incorporated = Incorporated
+anonymous.company-records.form.button.return = Return
 
-anonymous.company-records.button.return = Return 
+anonymous.company-records.list.label.name = Name
+anonymous.company-records.list.label.sector = Sector
+anonymous.company-records.list.label.stars = Stars
+
