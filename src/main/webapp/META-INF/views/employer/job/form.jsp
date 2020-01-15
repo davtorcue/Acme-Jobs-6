@@ -18,7 +18,7 @@
     </jstl:if>
     
     <jstl:if test="${command != 'create'}">
-    <acme:form-submit code="employer.job.form.button.createDuties" action="/employer/duty/create?jobId=${id}"/>
+    <acme:form-submit method="get" code="employer.job.form.button.createDuties" action="/employer/duty/create?jobId=${id}"/>
     </jstl:if>
     
     <jstl:if test="${command != 'create'}">
